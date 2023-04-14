@@ -25,7 +25,7 @@ pipeline {
 
     stage('Run') {
       steps {
-        bat 'npm start & sleep 1 echo $! > .pidfile'
+        bat 'npm start'
       }
     }
 
